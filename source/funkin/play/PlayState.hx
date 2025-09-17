@@ -1,5 +1,11 @@
 package funkin.play;
 
+import funkin.play.character.*;
+import funkin.play.gameover.*;
+import funkin.play.song.*;
+import funkin.play.stages.*;
+import funkin.play.ui.*;
+
 import Section.SwagSection;
 import Song.SwagSong;
 import flixel.FlxBasic;

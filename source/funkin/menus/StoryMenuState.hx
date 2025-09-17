@@ -1,5 +1,7 @@
 package funkin.menus;
 
+import funkin.menus.storymode.*;
+
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.transition.FlxTransitionableState;
