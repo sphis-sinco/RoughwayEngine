@@ -38,6 +38,7 @@ class DialogueBox extends FlxSpriteGroup
 	{
 		super();
 
+		if (dialogueList.length <= 0) return;
 		return;
 
 		switch (PlayState.SONG.song.toLowerCase())
