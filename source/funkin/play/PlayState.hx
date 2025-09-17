@@ -9,7 +9,6 @@ import funkin.play.song.*;
 import funkin.play.stages.*;
 import funkin.play.stages.props.*;
 import funkin.play.ui.*;
-
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -910,8 +909,11 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
-		vocals = new FlxSound().loadEmbedded(PathShits.getSongVoices(SONG.song));
-		FlxG.sound.list.add(vocals);
+		if (SONG.needsVoices)
+		{
+			vocals = new FlxSound().loadEmbedded(PathShits.getSongVoices(SONG.song));
+			FlxG.sound.list.add(vocals);
+		}
 
 		notes = new FlxTypedGroup<Note>();
 		add(notes);
@@ -1201,9 +1203,6 @@ class PlayState extends MusicBeatState
 		{
 			FlxG.switchState(() -> new ChartingState());
 		}
-
-		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
-		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
 
 		iconP1.setGraphicSize(Std.int(FlxMath.lerp(150, iconP1.width, 0.50)));
 		iconP2.setGraphicSize(Std.int(FlxMath.lerp(150, iconP2.width, 0.50)));
