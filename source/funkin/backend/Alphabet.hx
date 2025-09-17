@@ -68,10 +68,6 @@ class Alphabet extends FlxSpriteGroup
 		var xPos:Float = 0;
 		for (character in splitWords)
 		{
-			// if (character.fastCodeAt() == " ")
-			// {
-			// }
-
 			if (character == " " || character == "-")
 			{
 				lastWasSpace = true;

@@ -1,5 +1,6 @@
 package funkin.menus;
 
+import funkin.menus.storymode.data.WeekData;
 import funkin.backend.global.WeekList;
 import flash.text.TextField;
 import flixel.FlxG;
@@ -31,7 +32,15 @@ class FreeplayState extends MusicBeatState
 
 	override function create()
 	{
-		songs = WeekList.get;
+		songs = [];
+		for (week in WeekList.get)
+		{
+			var weekData = new WeekData(week);
+
+			for (song in weekData.songs)
+				songs.push(song);
+		}
+		songs.push("i am a space tester");
 
 		/* 
 			if (FlxG.sound.music != null)
