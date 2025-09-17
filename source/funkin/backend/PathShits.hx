@@ -1,6 +1,7 @@
 package funkin.backend;
 
 #if sys
+import sys.io.File;
 import sys.FileSystem;
 #end
 
@@ -38,6 +39,15 @@ class PathShits
                         return _inst_noFolder;
 
                 return null;
+        }
+
+        public static function getText(id) {
+
+                #if sys
+                return File.getContent(id);
+                #end
+
+                return Assets.getText(id);
         }
 
         public static function exists(id) {
