@@ -1,6 +1,6 @@
 package funkin.backend;
 
-import Conductor.BPMChangeEvent;
+import funkin.backend.Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.ui.FlxUIState;

@@ -1,11 +1,6 @@
 package funkin.backend;
 
-import Song.SwagSong;
-
-/**
- * ...
- * @author
- */
+import funkin.backend.Song.SwagSong;
 
 typedef BPMChangeEvent =
 {
@@ -27,10 +22,6 @@ class Conductor
 	public static var safeZoneOffset:Float = (safeFrames / 60) * 1000; // is calculated in create(), is safeFrames in milliseconds
 
 	public static var bpmChangeMap:Array<BPMChangeEvent> = [];
-
-	public function new()
-	{
-	}
 
 	public static function mapBPMChanges(song:SwagSong)
 	{

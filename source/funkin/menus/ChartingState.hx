@@ -1,8 +1,10 @@
 package funkin.menus;
 
-import Section.SwagSection;
-import Song.SwagSong;
-import Conductor.BPMChangeEvent;
+import funkin.backend.Conductor.BPMChangeEvent;
+import funkin.backend.Section.SwagSection;
+import funkin.play.ui.HealthIcon;
+import funkin.backend.Song.SwagSong;
+import funkin.play.ui.Note;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.display.FlxGridOverlay;

@@ -1,6 +1,5 @@
 package funkin.play.ui;
 
-import Controls.Control;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxSubState;

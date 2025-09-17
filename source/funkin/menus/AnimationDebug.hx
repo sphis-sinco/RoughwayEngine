@@ -1,5 +1,6 @@
 package funkin.menus;
 
+import funkin.play.character.*;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;

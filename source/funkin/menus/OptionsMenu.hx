@@ -1,6 +1,6 @@
 package funkin.menus;
 
-import Controls.Control;
+import funkin.backend.Controls.Control;
 import flash.text.TextField;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -78,7 +78,6 @@ class OptionsMenu extends MusicBeatState
 		{
 			PlayerSettings.player1.controls.replaceBinding(Control.LEFT, Keys, FlxG.keys.getIsDown()[0].ID, null);
 		}
-		// PlayerSettings.player1.controls.replaceBinding(Control)
 	}
 
 	var isSettingControl:Bool = false;

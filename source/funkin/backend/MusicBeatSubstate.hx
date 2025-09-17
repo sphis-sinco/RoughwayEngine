@@ -1,7 +1,6 @@
 package funkin.backend;
 
-import Conductor.BPMChangeEvent;
-import flixel.FlxG;
+import funkin.backend.Conductor.BPMChangeEvent;
 import flixel.FlxSubState;
 
 class MusicBeatSubstate extends FlxSubState

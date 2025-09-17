@@ -1,13 +1,14 @@
 package funkin.play;
 
+import funkin.backend.Section.SwagSection;
+import funkin.backend.Song.SwagSong;
 import funkin.play.character.*;
 import funkin.play.gameover.*;
 import funkin.play.song.*;
 import funkin.play.stages.*;
+import funkin.play.stages.props.*;
 import funkin.play.ui.*;
 
-import Section.SwagSection;
-import Song.SwagSong;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
