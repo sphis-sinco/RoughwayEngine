@@ -1,5 +1,6 @@
 package funkin.play;
 
+import funkin.menus.storymode.StoryMenuState;
 import funkin.backend.Section.SwagSection;
 import funkin.backend.Song.SwagSong;
 import funkin.play.character.*;

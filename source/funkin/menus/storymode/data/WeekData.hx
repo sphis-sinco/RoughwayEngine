@@ -6,7 +6,10 @@ import json2object.JsonParser;
 class WeekData
 {
 	@:default([])
-	public var props:Array<WeekProp> = [];
+	public var props:Array<WeekProp>;
+
+	@:default(["tutorial"])
+	public var songs:Array<String>;
 
 	@:default("Dummy Week")
 	public var weekTitle:String;
@@ -29,10 +32,11 @@ class WeekData
 		this.weekID = id;
 		this.props = json.props;
 		this.weekTitle = json.weekTitle;
+		this.songs = json.songs;
 	}
 
 	public function toString():String
 	{
-		return 'WeekData(id:${weekID}, title:${weekTitle}, props:${[for (prop in props) prop.toString]})';
+		return 'WeekData(id: ${weekID}, title: ${weekTitle}, songs: ${songs}, props: ${[for (prop in props) prop.toString]})';
 	}
 }

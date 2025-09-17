@@ -1,6 +1,4 @@
-package funkin.menus;
-
-import funkin.menus.storymode.*;
+package funkin.menus.storymode;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
