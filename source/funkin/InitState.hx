@@ -18,7 +18,7 @@ class InitState extends FlxState
 
 		PlayerSettings.init();
 
-		FlxG.save.bind('funkin', 'ninjamuffin99');
+		FlxG.save.bind('roughway', 'sphis');
 
 		Highscore.load();
 
