@@ -169,11 +169,11 @@ class PlayState extends MusicBeatState
 					"Only then I will even CONSIDER letting you\ndate my daughter!"
 				];
 			case 'senpai':
-				dialogue = CoolUtil.coolTextFile('assets/data/senpai/senpaiDialogue.txt');
+				dialogue = CoolUtil.coolTextFile('assets/data/songs/senpai/senpaiDialogue.txt');
 			case 'roses':
-				dialogue = CoolUtil.coolTextFile('assets/data/roses/rosesDialogue.txt');
+				dialogue = CoolUtil.coolTextFile('assets/data/songs/roses/rosesDialogue.txt');
 			case 'thorns':
-				dialogue = CoolUtil.coolTextFile('assets/data/thorns/thornsDialogue.txt');
+				dialogue = CoolUtil.coolTextFile('assets/data/songs/thorns/thornsDialogue.txt');
 		}
 
 		if (SONG.song.toLowerCase() == 'spookeez' || SONG.song.toLowerCase() == 'monster' || SONG.song.toLowerCase() == 'south')
