@@ -1,24 +1,38 @@
 package funkin.menus.storymode.data;
 
+import lime.utils.Assets;
 import json2object.JsonParser;
 
 class WeekData
 {
-        @:default([])
-        public var props:Array<WeekProp> = [];
+	@:default([])
+	public var props:Array<WeekProp> = [];
 
-        @:default("Dummy Week")
-        public var weekTitle:String;
-        
-        @:jignored
-        public var weekID:String;
+	@:default("Dummy Week")
+	public var weekTitle:String;
 
-        public function new(id:String) {
-                var parser = new JsonParser<WeekData>();
+	@:jignored
+	public var weekID:String;
 
+	public function new(id:String)
+	{
+		var parser = new JsonParser<WeekData>();
 
-		final jsonPath = "assets/data/levels/"+id+".json";
+		final jsonPath = "assets/data/levels/" + id + ".json";
 		var json = parser.fromJson(Assets.getText(jsonPath), jsonPath);
-        }
-        
+
+		if (json == null)
+		{
+			throw "Couldn't get json data for week: " + id;
+		}
+
+		this.weekID = id;
+		this.props = json.props;
+		this.weekTitle = json.weekTitle;
+	}
+
+	public function toString():String
+	{
+		return 'WeekData(id:${weekID}, title:${weekTitle}, props:${[for (prop in props) prop.toString]})';
+	}
 }
