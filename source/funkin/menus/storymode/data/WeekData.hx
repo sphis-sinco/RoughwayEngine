@@ -37,6 +37,6 @@ class WeekData
 
 	public function toString():String
 	{
-		return 'WeekData(id: ${weekID}, title: ${weekTitle}, songs: ${songs}, props: ${[for (prop in props) prop.toString]})';
+		return 'WeekData(id: ${weekID}, title: ${weekTitle}, songs: ${songs}, props: ${[for (prop in props) prop]})';
 	}
 }
