@@ -1,5 +1,6 @@
 package funkin.play.gameover;
 
+import funkin.menus.storymode.StoryMenuState;
 import funkin.play.character.*;
 import flixel.FlxG;
 import flixel.FlxObject;

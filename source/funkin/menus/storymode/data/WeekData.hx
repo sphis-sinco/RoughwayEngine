@@ -21,7 +21,7 @@ class WeekData
 	{
 		var parser = new JsonParser<WeekData>();
 
-		final jsonPath = "assets/data/levels/" + id + ".json";
+		final jsonPath = "assets/data/weeks/" + id + ".json";
 		var json = parser.fromJson(Assets.getText(jsonPath), jsonPath);
 
 		if (json == null)
