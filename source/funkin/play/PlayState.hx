@@ -894,7 +894,7 @@ class PlayState extends MusicBeatState
 		lastReportedPlayheadPosition = 0;
 
 		if (!paused)
-			FlxG.sound.playMusic("assets/music/" + SONG.song + "_Inst" + InitState.soundExt, 1, false);
+			FlxG.sound.playMusic(PathShits.getSongInst(SONG.song), 1, false);
 		FlxG.sound.music.onComplete = endSong;
 		vocals.play();
 	}
@@ -910,11 +910,7 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
-		if (SONG.needsVoices)
-			vocals = new FlxSound().loadEmbedded("assets/music/" + curSong + "_Voices" + InitState.soundExt);
-		else
-			vocals = new FlxSound();
-
+		vocals = new FlxSound().loadEmbedded(PathShits.getSongVoices(SONG.song));
 		FlxG.sound.list.add(vocals);
 
 		notes = new FlxTypedGroup<Note>();
