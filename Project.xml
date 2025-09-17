@@ -39,6 +39,7 @@
 	<set name="BUILD_DIR" value="export/32bit" if="32bit" />
 
 	<classpath name="source" />
+	<assets path="assets" />
 
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
@@ -46,8 +47,6 @@
 	
 	<!-- <library name="noPreload" preload='false'/> -->
 	<!-- <library name="noPreload"/> -->
-	<assets path="assets" include="*.mp3" if="web"/>
-	<assets path="assets" include="*.ogg" unless="web"/>
 
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 

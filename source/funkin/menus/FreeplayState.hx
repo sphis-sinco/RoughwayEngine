@@ -40,7 +40,6 @@ class FreeplayState extends MusicBeatState
 			for (song in weekData.songs)
 				songs.push(song);
 		}
-		songs.push("i am a space tester");
 
 		/* 
 			if (FlxG.sound.music != null)
